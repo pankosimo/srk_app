@@ -206,7 +206,7 @@ def load_data(component):
     if component == "Wasserstoff":
         df = pd.read_excel("dens_data_h2.xlsx")
     if component == "CO2":
-        df = pd.read_excel("dens_data_CO2.xlsx")
+        df = pd.read_excel("dens_data_co2.xlsx")
     return df
 @st.cache_data
 def load_vle_data():
