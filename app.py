@@ -232,7 +232,7 @@ with st.sidebar:
         #P=st.slider("Druck / bar",1.0,100.0, 20.86)
         Tc, Pc, omega = prop_database()
     if modus == "VLE":
-        alpha_fac = st.number_input("Parameter in Term für a",-1.000,1.000,value=0.2,step=0.05, key="alpha_slider",format="%.4f")
+        alpha_fac = st.number_input("Parameter für alpha",-1.000,1.000,value=0.2,step=0.05, key="alpha_slider",format="%.4f")
     #V = calc_srk()
 if modus == "Dichte eines Reinstoffes":
     model_data, model_quality, fig = density_plot()
